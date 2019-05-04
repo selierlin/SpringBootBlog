@@ -1,0 +1,3 @@
+rootProject.name = 'SpringBootBlog'
+include 'hello-world'
+
