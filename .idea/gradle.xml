@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/hello-world" />
+            <option value="$PROJECT_DIR$/jpa-in-action" />
+            <option value="$PROJECT_DIR$/thymeleaf-in-action" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

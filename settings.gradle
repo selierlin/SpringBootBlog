@@ -1,3 +1,5 @@
 rootProject.name = 'SpringBootBlog'
 include 'hello-world'
+include 'thymeleaf-in-action'
+include 'jpa-in-action'
 

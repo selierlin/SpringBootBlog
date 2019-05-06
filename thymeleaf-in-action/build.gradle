@@ -15,7 +15,7 @@ repositories {
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: "$springbootVersion"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "$springbootVersion"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: "$springbootVersion"
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: "$springbootVersion"
     testCompile group: 'junit', name: 'junit', version: '4.12'
-
 }
