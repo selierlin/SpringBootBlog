@@ -8,26 +8,26 @@
     <title>Security in action</title>
 
     <!-- CSRF -->
-    <meta name="_csrf" th:content="${_csrf.token}"/>
+<!--    <meta name="_csrf" th:content="${_csrf.token}"/>-->
     <!-- default header name is X-CSRF-TOKEN -->
-    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+<!--    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>-->
 
     <!-- Tether core CSS -->
-    <link href="../../css/tether.min.css" th:href="@{/css/tether.min.css}" rel="stylesheet">
+    <link href="../../css/tether.css" th:href="@{/css/tether.css}" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="../../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link href="../../css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet">
     <!-- Font-Awesome CSS -->
-    <link href="../../css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet">
+    <link href="../../css/font-awesome.css" th:href="@{/css/font-awesome.css}" rel="stylesheet">
     <!-- NProgress CSS -->
     <link href="../../css/nprogress.css" th:href="@{/css/nprogress.css}" rel="stylesheet">
     <!-- thinker-md CSS -->
     <link href="../../css/thinker-md.vendor.css" th:href="@{/css/thinker-md.vendor.css}" rel="stylesheet">
     <!-- bootstrap tags CSS -->
-    <link href="../../css/bootstrap-tagsinput.css" th:href="@{/css/jquery.tagsinput.min.css}" rel="stylesheet">
+    <link href="../../css/bootstrap-tagsinput.min.css" th:href="@{/css/jquery.tagsinput.min.css}" rel="stylesheet">
     <!-- bootstrap chosen CSS -->
-    <link href="../../css/component-chosen.min.css" th:href="@{/css/component-chosen.min.css}" rel="stylesheet">
+    <link href="../../css/component-chosen.css" th:href="@{/css/component-chosen.css}" rel="stylesheet">
     <!-- toastr CSS -->
-    <link href="../../css/toastr.min.css" th:href="@{/css/toastr.min.css}" rel="stylesheet">
+    <link href="../../css/toastr.css" th:href="@{/css/toastr.css}" rel="stylesheet">
     <!-- jQuery image cropping plugin CSS -->
     <link href="../../css/cropbox.css" th:href="@{/css/cropbox.css}" rel="stylesheet">
     <!-- Custom styles -->
@@ -66,8 +66,6 @@
             <div sec:authorize="isAuthenticated()"  class="row" >
                 <div class="dropdown">
                     <a class=" dropdown-toggle" data-toggle="dropdown"><span sec:authentication="name"></span></a>
-                </div>
-                <div>
                 </div>
 
                 <form action="/logout" th:action="@{/logout}" method="post">
