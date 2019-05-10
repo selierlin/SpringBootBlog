@@ -14,7 +14,8 @@ repositories {
 
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: "$springbootVersion"
-    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity4', version: '3.0.4.RELEASE'
+//    thymeleaf-extras-springsecurity4 与SpringBoot2.1.x有版本兼容问题，这里改为使用5版本
+    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "$springbootVersion"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: "$springbootVersion"
