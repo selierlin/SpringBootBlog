@@ -4,4 +4,5 @@ include 'thymeleaf-in-action'
 include 'jpa-in-action'
 include 'elasticsearch-in-action'
 include 'security-in-action'
+include 'blog'
 
