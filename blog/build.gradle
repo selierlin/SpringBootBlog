@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+ext {
+    springbootVersion = '2.1.4.RELEASE'
+}
+group 'com.theliang.blog'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+// 默认使用了 Maven 的中央仓库。这里改用自定义的镜像库
+repositories {
+    //mavenCentral()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+}
+// 依赖关系
+dependencies {
+    // 该依赖对于编译发行是必须的
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "$springbootVersion"
+    // 添加 Thymeleaf 的依赖
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: "$springbootVersion"
+    // 添加  Spring Security 依赖
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: "$springbootVersion"
+    // 添加 Spring Boot 开发工具依赖
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: "$springbootVersion"
+//    thymeleaf-extras-springsecurity4 与SpringBoot2.1.x有版本兼容问题，这里改为使用5版本
+//    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
+    // 该依赖对于编译测试是必须的，默认包含编译产品依赖和编译时依
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: "$springbootVersion"
+}
