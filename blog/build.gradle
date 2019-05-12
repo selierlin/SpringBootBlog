@@ -30,4 +30,13 @@ dependencies {
 //    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
     // 该依赖对于编译测试是必须的，默认包含编译产品依赖和编译时依
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: "$springbootVersion"
+
+    // 添加 Spring Data JPA 的依赖
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: "$springbootVersion"
+    // 添加 MySQL连接驱动 的依赖
+    compile('mysql:mysql-connector-java:6.0.5')
+    // 添加  Apache Commons Lang 依赖
+    compile('org.apache.commons:commons-lang3:3.9')
+
+
 }
